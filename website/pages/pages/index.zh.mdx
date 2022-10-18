@@ -1,0 +1,33 @@
+---
+layout: 'my-layout'
+blocks:
+  - name: SectionHero
+    title: NFT Studio
+    description: !md 开箱即用的NFT系列应用Blocklet
+    variant: stack
+    actions:
+      - name: Button
+        children: 购买 Storage
+        variant: contained
+        href: /app
+      - name: Button
+        children: 开发者文档
+        variant: contained
+        href: /docs/en
+  - name: SectionFeatureList
+    align: top-left
+    center: true
+    title: NFT Studio 特性
+    list:
+      - title: 支持多种存储驱动
+        description: 我们支持把数据存储到文件系统，S3，IPFS...
+        icon: i-mdi:puzzle-outline
+      - title: 访问控制管理
+        description: 控制不同的应用访问你的 Storage
+        icon: i-mdi:monitor-lock
+      - title: 管理数据
+        description: 通过直观的 UI 可视化，管理您的数据
+        icon: i-mdi:database-search-outline
+  - name: SectionLogoWall
+    title: 谁在使用 NFT Studio?
+---

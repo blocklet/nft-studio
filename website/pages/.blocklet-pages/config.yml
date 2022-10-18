@@ -1,0 +1,8 @@
+name: NFT Studio
+title: NFT Studio
+description: Out-of-the-box NFT series blocklet
+github: https://github.com/blocklet/nft-studio
+theme: arcblock
+themeConfig:
+  colors:
+    primary: '#7452FA'

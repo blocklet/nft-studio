@@ -1,0 +1,44 @@
+---
+layout: 'my-layout'
+blocks:
+  - name: SectionHero
+    title: NFT Studio
+    description: !md Out-of-the-box NFT series blocklet
+    variant: stack
+    actions:
+      - name: Button
+        children: Buy Storage
+        variant: contained
+        href: /app
+      - name: Button
+        children: Developer Documentation
+        variant: contained
+        href: /docs/en
+  - name: SectionFeatureList
+    align: top-left
+    center: true
+    title: NFT Studio Features
+    list:
+      - title: Support for multiple storage drives
+        description: We support storing data to file systems, S3, IPFS...
+        icon: i-mdi:puzzle-outline
+      - title: Access control management
+        description: Control access to your Storage by different applications
+        icon: i-mdi:monitor-lock
+      - title: Management data
+        description: Manage your data through intuitive UI visualisation
+        icon: i-mdi:database-search-outline
+  - name: SectionLogoWall
+    title: Who are using NFT Studio?
+    list:
+      - src: ./logos/blocklet.png
+        link: https://developer.blocklet.io
+      - src: ./logos/create.png
+        link: https://createblocklet.dev
+      - src: ./logos/launcher.svg
+        link: https://launcher.blocklet.io
+      - src: ./logos/store.png
+        link: https://store.blocklet.io
+      - src: ./logos/wallet.png
+        link: https://didwallet.io
+---

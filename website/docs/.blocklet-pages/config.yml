@@ -1,0 +1,65 @@
+name: NFT Studio Docs
+title: NFT Studio Docs
+description: A storage engine built for the DID ecosystem
+theme: docs
+github: https://github.com/blocklet/nft-studio
+themeConfig:
+  colors:
+    primary: '#7452FA'
+  sidebar:
+    en:
+      - text: Welcome
+        link: /
+      - text: Getting Started
+        link: /quick-start
+        items:
+          - text: Setup DID Wallet
+            link: /quick-start/did-wallet
+          - text: Setup Node.js
+            link: /quick-start/nodejs
+          - text: Setup Blocklet Server
+            link: /quick-start/blocklet-server
+          - text: Create first Blocklet
+            link: /quick-start/create-first-blocklet
+      - text: How To Guides
+        items:
+          - text: Blocklet How to use NFT Studio?
+            link: /guides/blocklet-how-to-use-did-storage
+      - text: Reference Guides
+        items:
+          - text: Storage endpoint api
+            link: /reference/storage-endpoint-api
+      - text: Conceptual Guides
+        items:
+          - text: What is NFT Studio?
+            link: /conceptual/what-is-did-storage
+      - text: Frequently Asked Questions
+        link: /faq
+    zh:
+      - text: 欢迎
+        link: /
+      - text: 入门指南
+        link: /quick-start
+        items:
+          - text: 安装 DID 钱包
+            link: /quick-start/did-wallet
+          - text: 安装 Node.js
+            link: /quick-start/nodejs
+          - text: 安装 Blocklet Server
+            link: /quick-start/blocklet-server
+          - text: 创建第一个应用
+            link: /quick-start/create-first-blocklet
+      - text: 操作指南
+        items:
+          - text: 应用如何对接 NFT Studio
+            link: /guides/blocklet-how-to-use-did-storage
+      - text: 参考指南
+        items:
+          - text: 存储端点 API
+            link: /reference/storage-endpoint-api
+      - text: 概念指南
+        items:
+          - text: NFT Studio 是什么？
+            link: /conceptual/what-is-did-storage
+      - text: 常见问题
+        link: /faq
