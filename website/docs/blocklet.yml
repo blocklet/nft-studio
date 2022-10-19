@@ -6,7 +6,7 @@ keywords:
   - docs
   - xmark
 group: static
-did: z8iZr6SYPe9Dit73hJCpAPgzvqpK6Sdty66Ae
+did: z8ia3CEcQFRxfeQru7QaL45grcKNi4ZfqhkWY
 main: dist
 author:
   name: Yongzhuo Liang
@@ -14,8 +14,8 @@ author:
 repository:
   type: git
   url: git+https://github.com/blocklet/create-blocklet.git
-specVersion: 1.1.1
-version: 0.1.0
+specVersion: 1.2.7
+version: 0.1.1
 logo: logo.png
 files:
   - logo.png
@@ -43,7 +43,9 @@ requirements:
 scripts:
   dev: npm run start
 environments: []
-capabilities: {}
+capabilities:
+  clusterMode: false
+  component: true
 screenshots: []
 components: []
 navigation:
