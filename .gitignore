@@ -17,6 +17,7 @@ node_modules
 .blocklet
 .yalc
 yalc.lock
+**/dist
 
 # local env files
 .env.local

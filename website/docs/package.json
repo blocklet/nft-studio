@@ -1,11 +1,11 @@
 {
-  "name": "docs",
+  "name": "nft-studio-docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "blocklet dev",
     "start": "xmark start",
-    "clean": "rm -rf .blocklet && rm -rf node_modules/.vite",
+    "clean": "rm -rf .blocklet && rm -rf dist && rm -rf node_modules/.vite",
     "build": "xmark build",
     "bundle": "npm run clean && xmark build && blocklet bundle --zip --create-release",
     "deploy": "npm run bundle && blocklet deploy .blocklet/bundle",

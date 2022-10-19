@@ -46,6 +46,14 @@ environments: []
 capabilities: {}
 screenshots: []
 components:
+  - name: nft-studio-docs
+    mountPoint: /docs
+    source:
+      store:
+        - https://test.store.blocklet.dev
+        - https://store.blocklet.dev
+      name: nft-studio-docs
+      version: latest
   - name: nft-maker
     mountPoint: /app
     source:

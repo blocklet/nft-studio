@@ -1,8 +1,8 @@
 ---
 name: 🐛 Bug report
 about: 我发现了一个bug
-title: '[BUG]: XYZ'
-labels: ':bug: bug'
+title: "[ Bug ]: XYZ"
+labels: ":bug: bug"
 ---
 
 # 🐛 Bug Report
@@ -11,7 +11,7 @@ labels: ':bug: bug'
 
 <!-- 描述一下你发现的bug -->
 
-## 复现这个bug
+## 复现这个 bug
 
 <!--
   详细地描述一下,如何复现这个bug?
