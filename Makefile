@@ -18,10 +18,6 @@ install:
 dep:
 	@echo "Install dependencies required for this repo..."
 	@lerna bootstrap && lerna link
-	@cd packages/core && npm run build
-	@cd packages/client && npm run build
-	@cd packages/fs-driver && npm run build
-	@cd packages/s3-driver && npm run build
 
 test:
 	@echo "Running test suites..."
