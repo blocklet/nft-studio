@@ -17,7 +17,8 @@
     "build": "lerna run clean && lerna run build",
     "clean": "lerna clean && lerna run clean",
     "bump-version": "zx scripts/bump-version.mjs --quiet",
-    "update:deps": "lerna exec --no-bail -- \"ncu -u -f /arcblock\\|ocap\\|abtnode\\|blocklet\\|did-connect/\" && lerna bootstrap && npx yarn-deduplicate yarn.lock && yarn"
+    "update:deps": "lerna exec --no-bail -- \"ncu -u -f /arcblock\\|ocap\\|abtnode\\|blocklet\\|did-connect/\" && lerna bootstrap && npx yarn-deduplicate yarn.lock && yarn",
+    "preinstall": "npx only-allow yarn"
   },
   "keywords": [],
   "author": "",

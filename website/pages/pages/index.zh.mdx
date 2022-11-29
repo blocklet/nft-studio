@@ -1,33 +1,45 @@
 ---
 layout: 'my-layout'
 blocks:
-  - name: SectionHero
-    title: NFT Studio
-    description: !md 开箱即用的NFT系列应用Blocklet
-    variant: stack
-    actions:
-      - name: Button
-        children: 购买 Storage
-        variant: contained
-        href: /app
-      - name: Button
-        children: 开发者文档
-        variant: contained
-        href: /docs/en
-  - name: SectionFeatureList
-    align: top-left
+  - name: SectionBlock
+    height: 90vh
+    # title: NFT Studio
+    # description: !md 零代码的一站式 NFT 创作工具
+    background:
+      image: ./ppts/hero.png
+  - name: SectionBlock
+    title: !md Designed for whole NFT lifecycle
     center: true
-    title: NFT Studio 特性
+    background:
+      color: white
+    description:
+      - name: SectionBlock
+        height: 70vh
+        background:
+          image: ./ppts/lifecycle.png
+  - name: SectionCardList
+    title: Who are using NFT Studio?
+    description: !md NFT Studio is used by many companies and individuals to create NFTs
+    center: true
+    background:
+      color: '#f7f7f7'
     list:
-      - title: 支持多种存储驱动
-        description: 我们支持把数据存储到文件系统，S3，IPFS...
-        icon: i-mdi:puzzle-outline
-      - title: 访问控制管理
-        description: 控制不同的应用访问你的 Storage
-        icon: i-mdi:monitor-lock
-      - title: 管理数据
-        description: 通过直观的 UI 可视化，管理您的数据
-        icon: i-mdi:database-search-outline
-  - name: SectionLogoWall
-    title: 谁在使用 NFT Studio?
+      - title: ArcBlock DevCon
+        type: article
+        description: In ArcBlock 2020 / 2021 Devcon, NFT Studio was used to create NFTs for the event
+        image: ./ppts/devcon.png
+      - title: ThangGa
+        type: article
+        description: We helped a designer to release an NFT Collection with religious overtones
+        image: ./ppts/thangga.png
+        reverse: true
+      - title: NFT Universe
+        type: article
+        description: A Planet Series NFT Collection, Coming soon...
+        image: ./ppts/nft-universe.png
+      - title: Long Drive Home
+        type: article
+        description: A Oil Painting Series NFT Collection, Coming soon...
+        image: ./ppts/long-drive-home.png
+        reverse: true
 ---

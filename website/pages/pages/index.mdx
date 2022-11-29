@@ -1,44 +1,45 @@
 ---
 layout: 'my-layout'
 blocks:
-  - name: SectionHero
-    title: NFT Studio
-    description: !md Out-of-the-box NFT series blocklet
-    variant: stack
-    actions:
-      - name: Button
-        children: Buy Storage
-        variant: contained
-        href: /app
-      - name: Button
-        children: Developer Documentation
-        variant: contained
-        href: /docs/en
-  - name: SectionFeatureList
-    align: top-left
+  - name: SectionBlock
+    height: 90vh
+    # title: NFT Studio
+    # description: !md No-code all-in-one NFT toolkit
+    background:
+      image: ./ppts/hero.png
+  - name: SectionBlock
+    title: !md Designed for whole NFT lifecycle
     center: true
-    title: NFT Studio Features
-    list:
-      - title: Support for multiple storage drives
-        description: We support storing data to file systems, S3, IPFS...
-        icon: i-mdi:puzzle-outline
-      - title: Access control management
-        description: Control access to your Storage by different applications
-        icon: i-mdi:monitor-lock
-      - title: Management data
-        description: Manage your data through intuitive UI visualisation
-        icon: i-mdi:database-search-outline
-  - name: SectionLogoWall
+    background:
+      color: white
+    description:
+      - name: SectionBlock
+        height: 70vh
+        background:
+          image: ./ppts/lifecycle.png
+  - name: SectionCardList
     title: Who are using NFT Studio?
+    description: !md NFT Studio is used by many companies and individuals to create NFTs
+    center: true
+    background:
+      color: '#f7f7f7'
     list:
-      - src: ./logos/blocklet.png
-        link: https://developer.blocklet.io
-      - src: ./logos/create.png
-        link: https://createblocklet.dev
-      - src: ./logos/launcher.svg
-        link: https://launcher.blocklet.io
-      - src: ./logos/store.png
-        link: https://store.blocklet.io
-      - src: ./logos/wallet.png
-        link: https://didwallet.io
+      - title: ArcBlock DevCon
+        type: article
+        description: In ArcBlock 2020 / 2021 Devcon, NFT Studio was used to create NFTs for the event
+        image: ./ppts/devcon.png
+      - title: ThangGa
+        type: article
+        description: We helped a designer to release an NFT Collection with religious overtones
+        image: ./ppts/thangga.png
+        reverse: true
+      - title: NFT Universe
+        type: article
+        description: A Planet Series NFT Collection, Coming soon...
+        image: ./ppts/nft-universe.png
+      - title: Long Drive Home
+        type: article
+        description: A Oil Painting Series NFT Collection, Coming soon...
+        image: ./ppts/long-drive-home.png
+        reverse: true
 ---
