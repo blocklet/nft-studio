@@ -1,3 +1,7 @@
+## 0.1.3 (December 06, 2022)
+
+- chore: update version
+
 ## 0.1.2 (十二月 06, 2022)
 
 - chore: add navigation id

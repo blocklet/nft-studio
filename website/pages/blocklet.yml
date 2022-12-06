@@ -15,7 +15,7 @@ repository:
   type: git
   url: git+https://github.com/blocklet/create-blocklet.git
 specVersion: 1.2.7
-version: 0.1.2
+version: 0.1.3
 logo: logo.png
 files:
   - logo.png
@@ -24,28 +24,29 @@ interfaces:
   - type: web
     name: publicUrl
     path: /
-    prefix: "*"
+    prefix: '*'
     port: BLOCKLET_PORT
     protocol: http
-community: ""
-documentation: ""
-homepage: ""
-license: ""
+community: ''
+documentation: ''
+homepage: ''
+license: ''
 payment:
   price: []
   share: []
 timeout:
   start: 60
 requirements:
-  abtnode: ">=1.6.22"
-  os: "*"
-  cpu: "*"
+  abtnode: '>=1.6.22'
+  os: '*'
+  cpu: '*'
 scripts:
   dev: npm run start
 environments: []
 capabilities:
   clusterMode: false
   component: true
+  navigation: true
 screenshots: []
 components:
   - name: nft-studio-docs
