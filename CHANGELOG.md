@@ -1,3 +1,7 @@
+## 0.1.2 (十二月 06, 2022)
+
+- chore: add navigation id
+
 ## 0.1.2 (October 19, 2022)
 
 - chore: init blocklet
