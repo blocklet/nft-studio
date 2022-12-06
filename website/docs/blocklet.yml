@@ -49,13 +49,15 @@ capabilities:
 screenshots: []
 components: []
 navigation:
-  - title:
+  - id: docs
+    title:
       en: Doc Site
       zh: 文档站点模板
     link:
       en: /en
       zh: /zh
-  - title:
+  - id: arcblock
+    title:
       en: ArcBlock
       zh: ArcBlock
     link:
