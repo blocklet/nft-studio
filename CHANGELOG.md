@@ -1,3 +1,7 @@
+## 0.1.4 (十二月 23, 2022)
+
+- feat: upload to prod store
+
 ## 0.1.3 (December 06, 2022)
 
 - chore: update version
