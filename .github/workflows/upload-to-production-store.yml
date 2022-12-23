@@ -1,0 +1,53 @@
+name: upload-to-production-store
+
+on: [push]
+
+#on:
+#  push:
+#    branches:
+#      - release
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip actions]')"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          #ref: release
+          ref: hot-fix
+
+      - name: Initialize
+        run: make github-init
+
+      - run: npm add -g @antfu/ni
+      - run: nci
+
+      - name: Upload NFT Studio Docs to Prod Store
+        uses: blocklet/action-workflow@v1
+        with:
+          skip-deps: true
+          skip-upload: false
+          skip-deploy: true
+          skip-release: true
+          bundle-command: yarn bundle
+          working-directory: website/docs
+          store-endpoint: ${{ secrets.STORE_ENDPOINT_PROD }}
+          store-access-token: ${{ secrets.STORE_ACCESS_TOKEN_PROD }}
+          slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Upload NFT Studio to Prod Store
+        uses: blocklet/action-workflow@v1
+        with:
+          skip-deps: true
+          skip-upload: false
+          skip-deploy: true
+          skip-release: true
+          bundle-command: yarn bundle
+          working-directory: website/pages
+          store-endpoint: ${{ secrets.STORE_ENDPOINT_PROD }}
+          store-access-token: ${{ secrets.STORE_ACCESS_TOKEN_PROD }}
+          slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
